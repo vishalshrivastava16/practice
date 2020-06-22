@@ -1,0 +1,6 @@
+This question can be solved by simple geometry and some computations.
+If we have the third vertex(i.e. vertex above x axis) and let it be (x,y) then the other two vertex can be calculated by using simple geometry.Let the other two vertex be (l,0) and (r,0) then l=x-y and r=x+y and its hypotenuse is equal to r-l.
+Now to solve this problem,for each of the N points we have to find the coordinates of two vertices of the triangle(i.e. the two vertices on the x axis) such that the point in consideration is the third vertex(i.e. point above x axis) of that triangle because this triangle will have the minimum area that contains it. After doing this we will get (li,0) and (ri,0) for each point where i=[1,n].
+The hypotenuse of the triangle which is required to contain all points is just the difference between maximum value of r minus the minimum value of l which can be calculated by maintaining min and max variable over the for loop.
+If this value is odd than that means that triangle coordinates are not integers(using geometry). Hence we have to increment hypotenuse by 1 if it is odd else hypotenuse is same.
+The final area of triangle can be calculated as (hypotenuse/2)^2(using geometry).
