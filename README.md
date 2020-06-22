@@ -1,2 +1,2 @@
 # practice
-it only for practice
+it is only for practice
